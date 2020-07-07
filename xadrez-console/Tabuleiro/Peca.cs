@@ -5,8 +5,9 @@
         public int qtdMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        public Peca(Posicao posicao, Cor cor, int qtdMovimentos, Tabuleiro tab) {
-            this.posicao = posicao;
+        //Construtor da peça
+        public Peca(Tabuleiro tab, Cor cor) {
+            this.posicao = null;
             this.tab = tab;
             this.cor = cor;
             this.qtdMovimentos = 0;
