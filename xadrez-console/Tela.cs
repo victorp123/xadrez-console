@@ -40,6 +40,7 @@ namespace xadrez_console {
             Console.BackgroundColor = fundoOriginal;
         }
 
+        //Metodo para receber a posição
         public static PosicaoXadrez lerPosicaoXadrez() {
             string s = Console.ReadLine();
             char coluna = s[0];

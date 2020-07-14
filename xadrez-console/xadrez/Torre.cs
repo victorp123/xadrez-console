@@ -12,6 +12,7 @@ namespace xadrez {
             return p == null || p.cor != this.cor;
         }
 
+        //Validando os possíveis movimentos da peça TORRE
         public override bool[,] movimentosPossiveis() {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
 

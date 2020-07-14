@@ -16,6 +16,8 @@ namespace xadrez {
             return p == null || p.cor != this.cor;
         }
 
+
+        //Validando os possíveis movimentos da peça REI
         public override bool[,] movimentosPossiveis() {
             bool[,] mat = new bool[tab.linhas, tab.colunas];
 
