@@ -6,7 +6,7 @@ namespace xadrez_console {
     class Program {
         static void Main(string[] args) {
 
-            try{
+            try {
                 PartidaDeXadrez partida = new PartidaDeXadrez();
 
 
@@ -20,7 +20,7 @@ namespace xadrez_console {
 
                         //Solicitando a Origem
                         Console.WriteLine();
-                        Console.Write("Origem: ");
+                        Console.Write("Origem (coluna e linha): ");
                         Posicao origem = Tela.lerPosicaoXadrez().toPosicao();
 
                         partida.validarPosicaoDeOrigem(origem);
@@ -31,17 +31,18 @@ namespace xadrez_console {
 
                         //Solicitando o destino
                         Console.WriteLine();
-                        Console.Write("Destino: ");
+                        Console.Write("Destino (coluna e linha): ");
                         Posicao destino = Tela.lerPosicaoXadrez().toPosicao();
                         partida.validarPosicaoDeDestino(origem, destino);
 
                         partida.realizaJogada(origem, destino);
-                    } 
-                    catch (TabuleiroException e){
+
+
+                    } catch (TabuleiroException e) {
                         Console.WriteLine(e.Message);
                         Console.ReadLine();
                     }
-                    
+
                 }
 
                 Console.Clear();

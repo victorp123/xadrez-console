@@ -7,6 +7,7 @@ namespace xadrez_console {
     class Tela {
 
         public static void imprimirPartida(PartidaDeXadrez partida) {
+
             imprimirTabuleiro(partida.tab);
             Console.WriteLine();
             imprimirPecasCapturadas(partida);
@@ -84,7 +85,7 @@ namespace xadrez_console {
 
         //Metodo para receber a posição
         public static PosicaoXadrez lerPosicaoXadrez() {
-            string s = Console.ReadLine();
+            string s = Console.ReadLine().ToLower();
             char coluna = s[0];
             int linha = int.Parse(s[1] + "");
             return new PosicaoXadrez(coluna, linha);
