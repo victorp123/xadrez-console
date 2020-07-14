@@ -17,6 +17,10 @@
             qtdMovimentos++;
         }
 
+        public void decrementarQteMovimentos() {
+            qtdMovimentos--;
+        }
+
         //Metodo para validar se a peça está bloqueada de movimento ou se há movimentos possíveis
         public bool existeMovimentosPossiveis() {
             bool[,] mat = movimentosPossiveis();
